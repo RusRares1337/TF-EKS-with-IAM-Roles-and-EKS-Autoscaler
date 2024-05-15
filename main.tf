@@ -43,7 +43,7 @@ resource "aws_subnet" "private-eu-west-3a" {
 resource "aws_subnet" "private-eu-west-3b" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.0.32.0/19"
-  availability_zone = "us-east-1b"
+  availability_zone = "eu-west-3b"
 
   tags = {
     "Name"                            = "private-eu-west-3b"
